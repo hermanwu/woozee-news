@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "woozee-news": {
+      "hosting": {
+        "woozee-news": [
+          "woozee-news"
+        ]
+      }
+    }
+  }
+}
