@@ -1,1 +1,31 @@
-<p>news works!</p>
+<mat-card class="example-card">
+  <div (click)="showDetail = !showDetail" class="news-summary">
+    <div>
+      <div>{{ news.source }}</div>
+      <div>{{ news.date | date: 'shortDate' }}</div>
+    </div>
+
+    <div>{{ news.title }}</div>
+  </div>
+
+  <div *ngIf="showDetail">
+    <div>
+      <ul>
+        <li *ngFor="let keyPoint of keyPoints">
+          {{ keyPoint }}
+        </li>
+      </ul>
+
+      <button
+        mat-button
+        (click)="onNextThought()"
+        [disabled]="keyPoints.length === news.keyPoints.length"
+      >
+        Next
+      </button>
+    </div>
+    <div class="image-display">
+      <img src="{{ imageLink }}" *ngFor="let imageLink of news.imageLinks" />
+    </div>
+  </div>
+</mat-card>

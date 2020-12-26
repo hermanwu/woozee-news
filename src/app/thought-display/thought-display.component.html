@@ -1,0 +1,28 @@
+<mat-card class="example-card">
+  <h1>{{ thought.question }}</h1>
+
+  <ng-container *ngIf="isExpanded; else logoDisplay">
+    <ng-container *ngFor="let news of thought.news">
+      <app-news [news]="news"></app-news>
+    </ng-container>
+
+    <mat-card class="margin-top-10px">
+      <div>Thoughts:</div>
+      <ul>
+        <li *ngFor="let comment of comments">
+          {{ comment.text }}
+        </li>
+      </ul>
+      <button
+        mat-button
+        (click)="onNextThought()"
+        [disabled]="comments.length === thought.comments.length"
+      >
+        Next
+      </button>
+    </mat-card>
+  </ng-container>
+  <ng-template #logoDisplay>
+    <img src="{{ stockLogoLink }}" (click)="isExpanded = !isExpanded" />
+  </ng-template>
+</mat-card>

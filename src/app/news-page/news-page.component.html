@@ -1,1 +1,8 @@
-<p>news-page works!</p>
+<div>
+  <h1>Daily News and Thoughts.</h1>
+  <div>{{ blog.date | date: 'fullDate' }}</div>
+
+  <ng-container *ngFor="let thought of blog.thoughts">
+    <app-thought-display [thought]="thought"></app-thought-display>
+  </ng-container>
+</div>
