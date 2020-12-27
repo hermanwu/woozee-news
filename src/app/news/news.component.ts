@@ -9,7 +9,7 @@ import { News } from '../models/news.model';
 export class NewsComponent implements OnInit {
   @Input() news: News;
 
-  keyPoints = [];
+  comments = [];
 
   showDetail = false;
 
@@ -17,7 +17,7 @@ export class NewsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onNextThought(): void {
-    this.keyPoints = this.news.keyPoints.slice(0, this.keyPoints.length + 1);
+  receiveNewResults(newResults): void {
+    this.comments = newResults;
   }
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { blog1 } from '../mock-data/blog-list';
-import { Blog } from '../models/blog.model';
+import { blogList } from '../mock-data/blog-list';
 
 @Component({
   selector: 'app-news-page',
@@ -8,7 +7,8 @@ import { Blog } from '../models/blog.model';
   styleUrls: ['./news-page.component.scss'],
 })
 export class NewsPageComponent implements OnInit {
-  blog: Blog;
+  blogs;
+  displayBlogs;
 
   constructor() {}
 
@@ -16,6 +16,11 @@ export class NewsPageComponent implements OnInit {
     let today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    this.blog = blog1;
+    this.blogs = blogList;
+  }
+
+  receiveNewResults(newResults) {
+    console.log(newResults);
+    this.displayBlogs = newResults;
   }
 }

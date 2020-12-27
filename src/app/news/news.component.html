@@ -9,23 +9,16 @@
   </div>
 
   <div *ngIf="showDetail">
-    <div>
-      <ul>
-        <li *ngFor="let keyPoint of keyPoints">
-          {{ keyPoint }}
+    <app-list-slides
+      [items]="news.comments"
+      [buttonText]="'Next'"
+      (displayItemsResult)="receiveNewResults($event)"
+    >
+      <ol>
+        <li *ngFor="let comment of comments">
+          {{ comment.text }}
         </li>
-      </ul>
-
-      <button
-        mat-button
-        (click)="onNextThought()"
-        [disabled]="keyPoints.length === news.keyPoints.length"
-      >
-        Next
-      </button>
-    </div>
-    <div class="image-display">
-      <img src="{{ imageLink }}" *ngFor="let imageLink of news.imageLinks" />
-    </div>
+      </ol>
+    </app-list-slides>
   </div>
 </mat-card>

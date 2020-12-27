@@ -7,9 +7,10 @@ import { NewsPageComponent } from './news-page/news-page.component';
 import { NewsComponent } from './news/news.component';
 import { SharedAngularMaterialModule } from './shared/modules/shared-angular-material.module';
 import { ThoughtDisplayComponent } from './thought-display/thought-display.component';
+import { ListSlidesComponent } from './helper/list-slides/list-slides.component';
 
 @NgModule({
-  declarations: [AppComponent, NewsComponent, NewsPageComponent, ThoughtDisplayComponent],
+  declarations: [AppComponent, NewsComponent, NewsPageComponent, ThoughtDisplayComponent, ListSlidesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

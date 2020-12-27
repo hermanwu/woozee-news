@@ -1,5 +1,7 @@
 <mat-card class="example-card">
-  <h1>{{ thought.question }}</h1>
+  <div class="title-question">
+    <h1>{{ thought.question }}</h1>
+  </div>
 
   <ng-container *ngIf="isExpanded; else logoDisplay">
     <ng-container *ngFor="let news of thought.news">
@@ -8,11 +10,11 @@
 
     <mat-card class="margin-top-10px">
       <div>Thoughts:</div>
-      <ul>
+      <ol>
         <li *ngFor="let comment of comments">
           {{ comment.text }}
         </li>
-      </ul>
+      </ol>
       <button
         mat-button
         (click)="onNextThought()"
@@ -23,6 +25,8 @@
     </mat-card>
   </ng-container>
   <ng-template #logoDisplay>
-    <img src="{{ stockLogoLink }}" (click)="isExpanded = !isExpanded" />
+    <div>
+      <img src="{{ stockLogoLink }}" (click)="isExpanded = !isExpanded" />
+    </div>
   </ng-template>
 </mat-card>

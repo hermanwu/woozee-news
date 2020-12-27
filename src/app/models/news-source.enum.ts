@@ -4,4 +4,5 @@ export enum newsSource {
   me = 'me',
   BLOOMBERG = 'Bloomberg',
   CHINA_DAILY = '人民日报',
+  CAR_THINGS = '车东西',
 }

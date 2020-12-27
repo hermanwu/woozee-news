@@ -45,6 +45,13 @@ export const thought2: Thought = {
 };
 
 export const blog1: Blog = {
-  date: new Date(),
+  date: new Date('2020-12-24T00:00:00'),
   thoughts: [thought1],
 };
+
+export const blog2: Blog = {
+  date: new Date('2020-12-26T00:00:00'),
+  thoughts: [thought2],
+};
+
+export const blogList = [blog2, blog1];
