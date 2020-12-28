@@ -1,7 +1,71 @@
 import { newsSource } from '../models/news-source.enum';
 import { News } from '../models/news.model';
 
-export const appleCarNews: News[] = [];
+export const appleCarNews: News[] = [
+  {
+    source: newsSource.reuters,
+    title:
+      'Exclusive: Apple targets car production by 2024 and eyes "next level" battery technology - sources',
+    date: new Date('2020-12-21T00:00:00'),
+    comments: [
+      {
+        text:
+          'targeting 2024 to produce a passenger vehicle that could include its own breakthrough battery technology',
+      },
+      {
+        text:
+          'a new battery design that could “radically” reduce the cost of batteries and increase the vehicle’s range',
+      },
+      {
+        text:
+          'Apple’s car might feature multiple lidar sensors for scanning different distances',
+      },
+    ],
+    relatedStocks: ['AAPL', 'GOOGL', 'TSLA'],
+    sourceLink:
+      'https://www.reuters.com/article/us-apple-autos-exclusive/exclusive-apple-targets-car-production-by-2024-and-eyes-next-level-battery-technology-sources-idUSKBN28V2PY',
+  },
+
+  {
+    source: newsSource.CNBC,
+    title: 'Elon Musk once considered selling Tesla to Apple.',
+    date: new Date('2020-12-22T00:00:00'),
+    comments: [
+      {
+        text:
+          'Tesla CEO Elon Musk tweeted on Tuesday, “During the darkest days of the Model 3 program, I reached out to Tim Cook to discuss the possibility of Apple acquiring Tesla (for 1/10 of our current value). He refused to take the meeting.”',
+      },
+      {
+        text:
+          'Tesla is the hard path. We have 100 times less money than Apple, so of course they can afford to pay more.',
+      },
+    ],
+    relatedStocks: ['TSLA', 'AAPL', 'NIO', 'XPEV', 'LI', 'VLDR', 'LAZR'],
+    sourceLink:
+      'https://www.cnbc.com/2020/12/22/elon-musk-pondered-sale-of-tesla-to-apple-says-tim-cook-wouldnt-meet.html',
+  },
+  {
+    source: newsSource.CAR_THINGS,
+    title: '苹果造车的秘密，都在这了',
+    date: new Date('2020-12-21T00:00:00'),
+    comments: [
+      {
+        text: '苹果为什么要造车？抓住时代风口。不造车公司没有新的增长点。',
+        imageLinks: [
+          'https://lh3.googleusercontent.com/pw/ACtC-3d1unjDJVtKLfaTru4U0MW7o4tUABDKl7WQgKwetN6uB6Ge0YV5MVxwBFCe6IPnQASRGKY8sLtyc1w8qpXEi7WPVuewyB73lV10T-T9Ui6brxVYDFhp-NN0oCoP8N9rcQgajL5bXahjRsmn5HFPffZz=w1318-h704-no?authuser=3',
+        ],
+      },
+      {
+        text: '苹果造车缺钱吗？苹果手握1918.3亿美元现金。人才也有，专利也有。',
+      },
+      {
+        text: '苹果造车的进展如何？正建设供应链体系。',
+      },
+    ],
+    relatedStocks: ['AAPL', 'TSLA', 'NIO'],
+    sourceLink: 'https://mp.weixin.qq.com/s/eujQcfs2tdTuqeDDc4OP9g',
+  },
+];
 
 export const newsList: News[] = [
   {
@@ -43,13 +107,5 @@ export const newsList: News[] = [
       },
     ],
     relatedStocks: ['BABA', 'TCEHY', 'PDD'],
-  },
-
-  {
-    source: newsSource.CNBC,
-    title: 'Elon Musk once considered selling Tesla to Apple.',
-    date: new Date('2020-12-21'),
-    comments: [],
-    relatedStocks: ['TSLA', 'AAPL', 'NIO', 'XPEV', 'LI', 'VLDR', 'LAZR'],
   },
 ];

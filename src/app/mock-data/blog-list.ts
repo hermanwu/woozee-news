@@ -1,6 +1,6 @@
 import { Blog } from '../models/blog.model';
 import { Thought } from '../models/thought.model';
-import { newsList } from './news-list';
+import { appleCarNews, newsList } from './news-list';
 
 export const thought1: Thought = {
   date: new Date(),
@@ -34,12 +34,38 @@ export const thought1: Thought = {
 
 export const thought2: Thought = {
   date: new Date(),
-  question: 'Apple revealing car in 2024? How to invest EV market?',
-  news: [newsList[1]],
+  question: 'Apple compete with Tesla? How to invest EV market?',
+  news: appleCarNews,
   comments: [
-    { text: 'Apple could be the biggest competitor of Tesla' },
-    { text: 'Tim Cook is famous for his logistics management' },
-    { text: 'EV will be the future and hottest market next year.' },
+    {
+      text: 'Apple has to enter EV market to grow.',
+      imageLinks: [
+        'https://lh3.googleusercontent.com/pw/ACtC-3faxKqFdKArIuuf966hsl0Ifr0JlBKJdQGt8CE38fSxKXFeRfQEOPiqXKTy4YjvSDfi7Q_9XRVCg-PjLBTZiNC8JqTTCvUTgyjBNrPg2d6ILez8USKzWSVL0Xoja4H40eubL0s-rWOq1swBn3-hTzh9=w1590-h1174-no?authuser=3',
+      ],
+    },
+    {
+      text:
+        'Unlike cryptocurrency, EV is the hottest market and our future for sure.',
+    },
+    {
+      text:
+        'Gradually invest, invest in the whole supply chain, invest in leaders,',
+
+      comments: [
+        {
+          text: 'AUTO maker (70%-90%): i.e., TSLA, NIO, AAPL',
+        },
+        {
+          text: 'Battery / Energy related (5%-15%): i.e., SBE, QS',
+        },
+        {
+          text: 'Lidar related (5%-15%): i.e., VLDR, LAZR',
+        },
+      ],
+      imageLinks: [
+        'https://lh3.googleusercontent.com/o-jmcPgzG80THa5-PSEJBP-VE1HNeWfDCniZ8Dgn1CU-skkHyYwkeV9efvUa_ob6s7UqdZbW54Y8RnITB8eEF6nvnPZtyuPzyve54Wc_7JSdZUNSoaKgwQB4bM7UUlIM-WpytyaUX2nqDk6QDNImDqTiGvl9W5nAgtZLO2OYSCMs4sTX5lgUN3n8HhJGdj7wrTHiWvPKs-GXc6D4OyvcYurhHLfNtllkaTZdVj5lhmToRKjP2wsT4O5WwIkg86qjbS4y1yGUSz8DNjgR9yRQdUYhehbKsBclarhn8r0Cv7noUQ5gdRa2i2FqjNhZ5hzzbUGNZIfnuPATGUb8Ev15TjRyM3z3wjnxcOjJ4G8eeJDxXCrr4qYVSHjL5unj8w9S_hAjI1EGA-IvZPMYJMfb1tRh7zKZz8QZL398h7YkiL1HFuVM5OFpBsx0ygcYDVBIvtG7D9sxYqPzND9QGOJHghVTyqpFK0ojgED3k2MztRtpjc-q4srEaL0bRkEpuD4nNACcwISkDCG0i4R-cdnsNbQQlRhJIpHnrrLRg7N988Ucum2HngDWUaglHcrXoH8LscjSJrJgiJMcobKtdHWBWQqlWcMCoCBEUsdPziEjqPJhMIfN79oFkKAd5pMrag1EsQUcLABq-sXIOBV7wVUV17168lpPTWc4yRW1LfjsqSKMk0HxvXpFyb6t16Wh=w2022-h872-no?authuser=3',
+      ],
+    },
   ],
   stock: 'AAPL',
 };

@@ -4,26 +4,52 @@
   </div>
 
   <ng-container *ngIf="isExpanded; else logoDisplay">
-    <ng-container *ngFor="let news of thought.news">
-      <app-news [news]="news"></app-news>
-    </ng-container>
+    <div>
+      <h2>News</h2>
+      <ng-container *ngFor="let news of thought.news">
+        <app-news [news]="news"></app-news>
+      </ng-container>
+    </div>
 
-    <mat-card class="margin-top-10px">
-      <div>Thoughts:</div>
-      <ol>
-        <li *ngFor="let comment of comments">
-          {{ comment.text }}
-        </li>
-      </ol>
+    <div class="margin-top-20px">
       <button
-        mat-button
-        (click)="onNextThought()"
-        [disabled]="comments.length === thought.comments.length"
+        mat-raised-button
+        *ngIf="!showThoughts; else myThoughts"
+        (click)="showThoughts = !showThoughts"
       >
-        Next
+        Show My Thoughts
       </button>
-    </mat-card>
+
+      <ng-template #myThoughts>
+        <h2>My Thoughts</h2>
+
+        <app-list-slides
+          [items]="thought.comments"
+          [buttonText]="'Next'"
+          (displayItemsResult)="receiveNewResults($event)"
+        >
+          <ol>
+            <li *ngFor="let comment of comments">
+              {{ comment.text }}
+
+              <div *ngIf="comment.comments">
+                <ul>
+                  <li *ngFor="let subComment of comment.comments">
+                    {{ subComment.text }}
+                  </li>
+                </ul>
+              </div>
+
+              <div *ngIf="comment.imageLinks">
+                <img class="comment-image" src="{{ comment.imageLinks[0] }}" />
+              </div>
+            </li>
+          </ol>
+        </app-list-slides>
+      </ng-template>
+    </div>
   </ng-container>
+
   <ng-template #logoDisplay>
     <div>
       <img src="{{ stockLogoLink }}" (click)="isExpanded = !isExpanded" />

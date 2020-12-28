@@ -1,7 +1,15 @@
 <ng-content> </ng-content>
 
 <mat-toolbar>
-  <button mat-raised-button (click)="onClickDisplayNext()">
-    {{ buttonText }}
-  </button>
+  <mat-toolbar-row>
+    <span class="flex-spacer"></span>
+
+    <button
+      mat-raised-button
+      (click)="onClickDisplayNext()"
+      [disabled]="items.length === displayItemsCount"
+    >
+      {{ buttonText }}
+    </button>
+  </mat-toolbar-row>
 </mat-toolbar>

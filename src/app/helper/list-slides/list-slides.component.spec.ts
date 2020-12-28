@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ListSlidesComponent } from './list-slides.component';
 
 describe('ListSlidesComponent', () => {
@@ -8,9 +7,8 @@ describe('ListSlidesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListSlidesComponent ]
-    })
-    .compileComponents();
+      declarations: [ListSlidesComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

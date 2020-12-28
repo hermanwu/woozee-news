@@ -1,5 +1,5 @@
 export interface Comment {
   text: string;
-  imageLink?: string[];
+  imageLinks?: string[];
   comments?: Comment[];
 }

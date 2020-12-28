@@ -1,11 +1,17 @@
 <mat-card class="example-card">
-  <div (click)="showDetail = !showDetail" class="news-summary">
+  <div class="news-summary">
     <div>
       <div>{{ news.source }}</div>
       <div>{{ news.date | date: 'shortDate' }}</div>
     </div>
 
-    <div>{{ news.title }}</div>
+    <div>
+      <a target="_blank" href="{{ news.sourceLink }}">{{ news.title }}</a>
+    </div>
+
+    <div>
+      <button mat-button (click)="showDetail = !showDetail">Details</button>
+    </div>
   </div>
 
   <div *ngIf="showDetail">
@@ -17,6 +23,9 @@
       <ol>
         <li *ngFor="let comment of comments">
           {{ comment.text }}
+          <div *ngIf="comment.imageLinks">
+            <img class="comment-image" src="{{ comment?.imageLinks[0] }}" />
+          </div>
         </li>
       </ol>
     </app-list-slides>

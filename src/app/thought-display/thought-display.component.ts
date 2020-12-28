@@ -11,6 +11,7 @@ export class ThoughtDisplayComponent implements OnInit, OnChanges {
   @Input() thought: Thought;
 
   comments = [];
+  showThoughts = false;
 
   isExpanded = false;
   stockLogoLink: string;
@@ -25,5 +26,9 @@ export class ThoughtDisplayComponent implements OnInit, OnChanges {
 
   onNextThought() {
     this.comments = this.thought.comments.slice(0, this.comments.length + 1);
+  }
+
+  receiveNewResults(newResults): void {
+    this.comments = newResults;
   }
 }
