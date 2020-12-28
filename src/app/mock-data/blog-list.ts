@@ -34,31 +34,24 @@ export const thought1: Thought = {
 
 export const thought2: Thought = {
   date: new Date(),
-  question: 'Apple compete with Tesla? How to invest EV market?',
+  question:
+    'Apple is building EV to compete with Tesla? How to invest EV market?',
   news: appleCarNews,
   comments: [
     {
-      text: 'Apple has to enter EV market to grow.',
+      text: 'Apple has the incentives and resources to build an EV.',
       comments: [
         {
-          text: 'No revenue growth recently.',
-        },
-        {
           text:
-            'Reduce cost has limitation to grow company market capitalization.',
-        },
-        {
-          text:
-            'Apple has resources: cash + supply chain experience + existing chip, battery and lidar technology in their phones.',
+            'Huge cash + supply chain experience + chip, battery and lidar research capability.',
         },
       ],
       imageLinks: [
-        'https://lh3.googleusercontent.com/pw/ACtC-3faxKqFdKArIuuf966hsl0Ifr0JlBKJdQGt8CE38fSxKXFeRfQEOPiqXKTy4YjvSDfi7Q_9XRVCg-PjLBTZiNC8JqTTCvUTgyjBNrPg2d6ILez8USKzWSVL0Xoja4H40eubL0s-rWOq1swBn3-hTzh9=w1590-h1174-no?authuser=3',
+        'https://lh3.googleusercontent.com/pw/ACtC-3d1unjDJVtKLfaTru4U0MW7o4tUABDKl7WQgKwetN6uB6Ge0YV5MVxwBFCe6IPnQASRGKY8sLtyc1w8qpXEi7WPVuewyB73lV10T-T9Ui6brxVYDFhp-NN0oCoP8N9rcQgajL5bXahjRsmn5HFPffZz=w1318-h704-no?authuser=3',
       ],
     },
     {
-      text:
-        'Unlike cryptocurrency, EV is the hottest market and our future for sure.',
+      text: 'EV is the hottest area and our future for sure.',
       comments: [
         {
           text: 'Consumer understanding.',
@@ -73,7 +66,7 @@ export const thought2: Thought = {
     },
     {
       text:
-        'Invest in the whole supply chain, Invest in leaders, Invest gradually, ',
+        'Invest in the whole supply chain, Invest in leaders, Invest gradually. ',
 
       comments: [
         {
@@ -87,7 +80,7 @@ export const thought2: Thought = {
         },
         {
           text:
-            'Market leaders receive positive feedback loop: more resources, more users, more scalable.',
+            'Market leaders receive positive feedback loop: more users, more feedbacks, more scalable,  more resources.',
         },
         {
           text: 'Stock could see a 20%+ pull back. (i.e. TSLA, SBE).',

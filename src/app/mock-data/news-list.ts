@@ -13,35 +13,21 @@ export const appleCarNews: News[] = [
           'Targeting 2024 to produce a passenger vehicle that could include its own breakthrough battery technology',
         comments: [
           {
-            text: 'Apple confirms the future of EV.',
-          },
-          {
             text: '2021-2022 prototype needs to be released.',
           },
-        ],
-      },
-      {
-        text:
-          'A new battery design that could “radically” reduce the cost of batteries and increase the vehicle’s range',
-        comments: [
           {
-            text: 'Battery is the biggest pain point of EV.',
+            text: 'Battery is the biggest pain point of EV for consumers.',
           },
         ],
       },
+
       {
         text:
           'Apple’s car might feature multiple lidar sensors for scanning different distances',
         comments: [
           {
-            text: 'Lidar improves safety and accuracy in self-driving.',
-          },
-          {
-            text: 'Lidar was expensive before, but much cheaper now.',
-          },
-
-          {
-            text: 'Lidar has more upsides compared to a couple years ago .',
+            text:
+              'Lidar was expensive before, but much cheaper now. Lidar improves safety and accuracy in self-driving.',
           },
         ],
       },
@@ -50,7 +36,6 @@ export const appleCarNews: News[] = [
     sourceLink:
       'https://www.reuters.com/article/us-apple-autos-exclusive/exclusive-apple-targets-car-production-by-2024-and-eyes-next-level-battery-technology-sources-idUSKBN28V2PY',
   },
-
   {
     source: newsSource.CNBC,
     title: 'Elon Musk once considered selling Tesla to Apple.',
@@ -58,24 +43,11 @@ export const appleCarNews: News[] = [
     comments: [
       {
         text:
-          'Tesla CEO Elon Musk tweeted on Tuesday, “During the darkest days of the Model 3 program, I reached out to Tim Cook to discuss the possibility of Apple acquiring Tesla (for 1/10 of our current value). He refused to take the meeting.”',
-        comments: [
-          {
-            text: 'Self driving software was probably the main focus before.',
-          },
-          {
-            text:
-              'Now, companies realize that self driving requires software and hardware closely integrated.',
-          },
-        ],
-      },
-      {
-        text:
-          'Tesla is the hard path. We have 100 times less money than Apple, so of course they can afford to pay more.',
+          'Tesla CEO Elon Musk tweeted on Tuesday, “During the darkest days..., I reached out to Tim Cook to discuss the possibility of Apple acquiring Tesla. He refused the meeting.”',
         comments: [
           {
             text:
-              'Apple has money and will be the biggest competitor of Tesla.',
+              'Companies start to realize that self driving requires software and hardware closely integrated.',
           },
         ],
       },
@@ -91,12 +63,14 @@ export const appleCarNews: News[] = [
     comments: [
       {
         text: '苹果为什么要造车？抓住时代风口。不造车公司没有新的增长点。',
+
         imageLinks: [
-          'https://lh3.googleusercontent.com/pw/ACtC-3d1unjDJVtKLfaTru4U0MW7o4tUABDKl7WQgKwetN6uB6Ge0YV5MVxwBFCe6IPnQASRGKY8sLtyc1w8qpXEi7WPVuewyB73lV10T-T9Ui6brxVYDFhp-NN0oCoP8N9rcQgajL5bXahjRsmn5HFPffZz=w1318-h704-no?authuser=3',
+          'https://lh3.googleusercontent.com/pw/ACtC-3faxKqFdKArIuuf966hsl0Ifr0JlBKJdQGt8CE38fSxKXFeRfQEOPiqXKTy4YjvSDfi7Q_9XRVCg-PjLBTZiNC8JqTTCvUTgyjBNrPg2d6ILez8USKzWSVL0Xoja4H40eubL0s-rWOq1swBn3-hTzh9=w1590-h1174-no?authuser=3',
         ],
         comments: [
           {
-            text: 'Apple has no revolutionary product recently.',
+            text:
+              'Apple needs a revolutionary product to reach 3 trillions market cap.',
           },
         ],
       },
@@ -104,7 +78,8 @@ export const appleCarNews: News[] = [
         text: '苹果造车缺钱吗？苹果手握1918.3亿美元现金。人才也有，专利也有。',
         comments: [
           {
-            text: 'Cash could buy Airbnb + Uber.',
+            text:
+              'Apple has enough cash to build an EV (cash = NIO + UBER + SBE).',
           },
         ],
       },

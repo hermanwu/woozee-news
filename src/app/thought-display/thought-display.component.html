@@ -17,11 +17,11 @@
         *ngIf="!showThoughts; else myThoughts"
         (click)="showThoughts = !showThoughts"
       >
-        Show My Thoughts
+        My Thoughts and Conclusion
       </button>
 
       <ng-template #myThoughts>
-        <h2>My Thoughts</h2>
+        <h2>My Thoughts and Conclusion</h2>
 
         <app-list-slides
           [items]="thought.comments"
