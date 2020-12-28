@@ -6,9 +6,9 @@
   <ng-container *ngIf="isExpanded; else logoDisplay">
     <div>
       <h2>News</h2>
-      <ng-container *ngFor="let news of thought.news">
+      <div *ngFor="let news of thought.news" class="app-news">
         <app-news [news]="news"></app-news>
-      </ng-container>
+      </div>
     </div>
 
     <div class="margin-top-20px">

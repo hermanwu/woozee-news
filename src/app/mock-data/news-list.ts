@@ -10,15 +10,40 @@ export const appleCarNews: News[] = [
     comments: [
       {
         text:
-          'targeting 2024 to produce a passenger vehicle that could include its own breakthrough battery technology',
+          'Targeting 2024 to produce a passenger vehicle that could include its own breakthrough battery technology',
+        comments: [
+          {
+            text: 'Apple confirms the future of EV.',
+          },
+          {
+            text: '2021-2022 prototype needs to be released.',
+          },
+        ],
       },
       {
         text:
-          'a new battery design that could “radically” reduce the cost of batteries and increase the vehicle’s range',
+          'A new battery design that could “radically” reduce the cost of batteries and increase the vehicle’s range',
+        comments: [
+          {
+            text: 'Battery is the biggest pain point of EV.',
+          },
+        ],
       },
       {
         text:
           'Apple’s car might feature multiple lidar sensors for scanning different distances',
+        comments: [
+          {
+            text: 'Lidar improves safety and accuracy in self-driving.',
+          },
+          {
+            text: 'Lidar was expensive before, but much cheaper now.',
+          },
+
+          {
+            text: 'Lidar has more upsides compared to a couple years ago .',
+          },
+        ],
       },
     ],
     relatedStocks: ['AAPL', 'GOOGL', 'TSLA'],
@@ -34,10 +59,25 @@ export const appleCarNews: News[] = [
       {
         text:
           'Tesla CEO Elon Musk tweeted on Tuesday, “During the darkest days of the Model 3 program, I reached out to Tim Cook to discuss the possibility of Apple acquiring Tesla (for 1/10 of our current value). He refused to take the meeting.”',
+        comments: [
+          {
+            text: 'Self driving software was probably the main focus before.',
+          },
+          {
+            text:
+              'Now, companies realize that self driving requires software and hardware closely integrated.',
+          },
+        ],
       },
       {
         text:
           'Tesla is the hard path. We have 100 times less money than Apple, so of course they can afford to pay more.',
+        comments: [
+          {
+            text:
+              'Apple has money and will be the biggest competitor of Tesla.',
+          },
+        ],
       },
     ],
     relatedStocks: ['TSLA', 'AAPL', 'NIO', 'XPEV', 'LI', 'VLDR', 'LAZR'],
@@ -54,12 +94,28 @@ export const appleCarNews: News[] = [
         imageLinks: [
           'https://lh3.googleusercontent.com/pw/ACtC-3d1unjDJVtKLfaTru4U0MW7o4tUABDKl7WQgKwetN6uB6Ge0YV5MVxwBFCe6IPnQASRGKY8sLtyc1w8qpXEi7WPVuewyB73lV10T-T9Ui6brxVYDFhp-NN0oCoP8N9rcQgajL5bXahjRsmn5HFPffZz=w1318-h704-no?authuser=3',
         ],
+        comments: [
+          {
+            text: 'Apple has no revolutionary product recently.',
+          },
+        ],
       },
       {
         text: '苹果造车缺钱吗？苹果手握1918.3亿美元现金。人才也有，专利也有。',
+        comments: [
+          {
+            text: 'Cash could buy Airbnb + Uber.',
+          },
+        ],
       },
       {
         text: '苹果造车的进展如何？正建设供应链体系。',
+        comments: [
+          {
+            text:
+              'Auto manufacturing is hard, but Tim Cook is supply chain expert.',
+          },
+        ],
       },
     ],
     relatedStocks: ['AAPL', 'TSLA', 'NIO'],

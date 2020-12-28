@@ -39,6 +39,19 @@ export const thought2: Thought = {
   comments: [
     {
       text: 'Apple has to enter EV market to grow.',
+      comments: [
+        {
+          text: 'No revenue growth recently.',
+        },
+        {
+          text:
+            'Reduce cost has limitation to grow company market capitalization.',
+        },
+        {
+          text:
+            'Apple has resources: cash + supply chain experience + existing chip, battery and lidar technology in their phones.',
+        },
+      ],
       imageLinks: [
         'https://lh3.googleusercontent.com/pw/ACtC-3faxKqFdKArIuuf966hsl0Ifr0JlBKJdQGt8CE38fSxKXFeRfQEOPiqXKTy4YjvSDfi7Q_9XRVCg-PjLBTZiNC8JqTTCvUTgyjBNrPg2d6ILez8USKzWSVL0Xoja4H40eubL0s-rWOq1swBn3-hTzh9=w1590-h1174-no?authuser=3',
       ],
@@ -46,10 +59,21 @@ export const thought2: Thought = {
     {
       text:
         'Unlike cryptocurrency, EV is the hottest market and our future for sure.',
+      comments: [
+        {
+          text: 'Consumer understanding.',
+        },
+        {
+          text: 'Companies Investment.',
+        },
+        {
+          text: 'Government Support.',
+        },
+      ],
     },
     {
       text:
-        'Gradually invest, invest in the whole supply chain, invest in leaders,',
+        'Invest in the whole supply chain, Invest in leaders, Invest gradually, ',
 
       comments: [
         {
@@ -60,6 +84,13 @@ export const thought2: Thought = {
         },
         {
           text: 'Lidar related (5%-15%): i.e., VLDR, LAZR',
+        },
+        {
+          text:
+            'Market leaders receive positive feedback loop: more resources, more users, more scalable.',
+        },
+        {
+          text: 'Stock could see a 20%+ pull back. (i.e. TSLA, SBE).',
         },
       ],
       imageLinks: [

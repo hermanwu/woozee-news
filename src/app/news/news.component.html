@@ -1,7 +1,11 @@
 <mat-card class="example-card">
   <div class="news-summary">
     <div>
-      <div>{{ news.source }}</div>
+      <mat-chip-list>
+        <mat-chip color="primary">
+          {{ news.source }}
+        </mat-chip>
+      </mat-chip-list>
       <div>{{ news.date | date: 'shortDate' }}</div>
     </div>
 
@@ -20,14 +24,29 @@
       [buttonText]="'Next'"
       (displayItemsResult)="receiveNewResults($event)"
     >
-      <ol>
-        <li *ngFor="let comment of comments">
-          {{ comment.text }}
-          <div *ngIf="comment.imageLinks">
-            <img class="comment-image" src="{{ comment?.imageLinks[0] }}" />
-          </div>
-        </li>
-      </ol>
+      <div>
+        <ol>
+          <li *ngFor="let comment of comments">
+            <strong class="quote">"</strong>
+            <i>{{ comment.text }}</i>
+            <strong class="quote">"</strong>
+
+            <div *ngIf="comment.comments" class="my-comments">
+              <strong>My Comments</strong>
+
+              <ul>
+                <li *ngFor="let subComment of comment.comments">
+                  {{ subComment.text }}
+                </li>
+              </ul>
+            </div>
+
+            <div *ngIf="comment.imageLinks">
+              <img class="comment-image" src="{{ comment?.imageLinks[0] }}" />
+            </div>
+          </li>
+        </ol>
+      </div>
     </app-list-slides>
   </div>
 </mat-card>
