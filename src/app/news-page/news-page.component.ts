@@ -20,7 +20,6 @@ export class NewsPageComponent implements OnInit {
   }
 
   receiveNewResults(newResults) {
-    console.log(newResults);
     this.displayBlogs = newResults;
   }
 }

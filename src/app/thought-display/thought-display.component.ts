@@ -1,5 +1,4 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
-import { logoMap } from '../mock-data/logo-map';
 import { Thought } from '../models/thought.model';
 
 @Component({
@@ -14,14 +13,14 @@ export class ThoughtDisplayComponent implements OnInit, OnChanges {
   showThoughts = false;
 
   isExpanded = false;
-  stockLogoLink: string;
+  coverImageLink: string;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   ngOnChanges(): void {
-    this.stockLogoLink = logoMap[this.thought.stock];
+    this.coverImageLink = this.thought.coverImageLink;
   }
 
   onNextThought() {

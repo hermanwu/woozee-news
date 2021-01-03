@@ -1,11 +1,13 @@
 <mat-card class="example-card">
-  <div class="title-question">
-    <h1>{{ thought.question }}</h1>
-  </div>
+  <ng-container *ngIf="isExpanded || !coverImageLink; else logoDisplay">
+    <div class="title-question">
+      <ng-container *ngFor="let question of thought.questions">
+        {{ question }}
+      </ng-container>
+    </div>
 
-  <ng-container *ngIf="isExpanded; else logoDisplay">
     <div>
-      <h2>News</h2>
+      <h2>新闻</h2>
       <div *ngFor="let news of thought.news" class="app-news">
         <app-news [news]="news"></app-news>
       </div>
@@ -17,11 +19,11 @@
         *ngIf="!showThoughts; else myThoughts"
         (click)="showThoughts = !showThoughts"
       >
-        My Thoughts and Conclusion
+        我的想法和结论
       </button>
 
       <ng-template #myThoughts>
-        <h2>My Thoughts and Conclusion</h2>
+        <h2>我的想法和结论</h2>
 
         <app-list-slides
           [items]="thought.comments"
@@ -51,8 +53,13 @@
   </ng-container>
 
   <ng-template #logoDisplay>
-    <div>
-      <img src="{{ stockLogoLink }}" (click)="isExpanded = !isExpanded" />
+    <div (click)="isExpanded = !isExpanded" class="cover-container">
+      <div class="title">
+        <div *ngFor="let question of thought.questions">
+          {{ question }}
+        </div>
+      </div>
+      <img src="{{ coverImageLink }}" />
     </div>
   </ng-template>
 </mat-card>

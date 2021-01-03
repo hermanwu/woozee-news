@@ -1,10 +1,11 @@
 import { Blog } from '../models/blog.model';
 import { Thought } from '../models/thought.model';
 import { appleCarNews, newsList } from './news-list';
+import { nioNews } from './nio-news';
 
 export const thought1: Thought = {
   date: new Date(),
-  question: 'Alibaba dropped 13%, can we buy Alibaba?',
+  questions: ['Alibaba dropped 13%, can we buy Alibaba?'],
   news: [newsList[0], newsList[1]],
   comments: [
     {
@@ -34,8 +35,9 @@ export const thought1: Thought = {
 
 export const thought2: Thought = {
   date: new Date(),
-  question:
+  questions: [
     'Apple is building EV to compete with Tesla? How to invest EV market?',
+  ],
   news: appleCarNews,
   comments: [
     {
@@ -94,6 +96,40 @@ export const thought2: Thought = {
   stock: 'AAPL',
 };
 
+export const thought3: Thought = {
+  date: new Date('2021-01-03T00:00:00'),
+  questions: [
+    '特斯拉，蔚来公布第四季度交付结果',
+    '哪个更值得投资？',
+    '1月9日 NIO day 有什么看点?',
+  ],
+  news: nioNews,
+  comments: [
+    {
+      text:
+        '就市场来说，特斯拉的优势是有全球市场的布局和经验。而蔚来在全球最大的中国市场，有本土作战的优势。',
+    },
+    {
+      text:
+        '特斯拉和蔚来市销率应该会旗鼓相当，但蔚来因为体量小，增长率高，股价可能有更多上涨空间。',
+    },
+    { text: '就消息面来说，蔚来还有NIO day可以期待，可能会有利好涨一波。' },
+    {
+      text:
+        '从K线来说，蔚来也更有上涨潜力，特斯拉可能小幅回调。但我肯定会在回调时少量加仓。',
+    },
+    {
+      text:
+        '目前电动车市场占有率低，在新能源大背景下，不要做空，不要买看跌期权。',
+    },
+
+    { text: '总结就是我认为两个都好，我都看多，都买。' },
+  ],
+  stock: 'NIO',
+  coverImageLink:
+    'https://lh3.googleusercontent.com/pw/ACtC-3dXYiddwShYTyfuBo328nDu3r8S9CVkMfCTuHkFhU04pg9lM1uoe8lyb8c06bs_c53ysEma7BLQCeoK994AdsCKyQ0eaVPH7JF0EhzSb0r5-5xD9mruumdTQTf9gYU0oJHXYlxD0oNjq8UTH5G59LJj=w990-h661-no?authuser=3',
+};
+
 export const blog1: Blog = {
   date: new Date('2020-12-24T00:00:00'),
   thoughts: [thought1],
@@ -104,4 +140,9 @@ export const blog2: Blog = {
   thoughts: [thought2],
 };
 
-export const blogList = [blog2, blog1];
+export const blog3: Blog = {
+  date: new Date('2021-01-03T00:00:00'),
+  thoughts: [thought3],
+};
+
+export const blogList = [blog3, blog2, blog1];

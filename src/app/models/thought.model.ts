@@ -3,8 +3,9 @@ import { News } from './news.model';
 
 export interface Thought {
   date: Date;
-  question: string;
+  questions: string[];
   news?: News[];
   comments?: Comment[];
   stock: string;
+  coverImageLink?: string;
 }

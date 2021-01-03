@@ -3,6 +3,34 @@
   justify-content: center;
   align-items: center;
   height: 80px;
+  font-size: large;
+}
+
+.cover-container {
+  position: relative;
+}
+
+.title {
+  float: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 500px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  z-index: 1000;
+  background-color: transparent;
+
+  font-weight: bold;
+  font-size: x-large;
 }
 
 img {

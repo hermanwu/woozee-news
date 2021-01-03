@@ -14,14 +14,16 @@
     </div>
 
     <div>
-      <button mat-button (click)="showDetail = !showDetail">Details</button>
+      <button mat-button (click)="showDetail = !showDetail">
+        详细 Details
+      </button>
     </div>
   </div>
 
   <div *ngIf="showDetail">
     <app-list-slides
       [items]="news.comments"
-      [buttonText]="'Next'"
+      [buttonText]="'下一条 Next'"
       (displayItemsResult)="receiveNewResults($event)"
     >
       <div>
@@ -32,7 +34,7 @@
             <strong class="quote">"</strong>
 
             <div *ngIf="comment.comments" class="my-comments">
-              <strong>I think</strong>
+              <strong>点评</strong>
 
               <ul>
                 <li *ngFor="let subComment of comment.comments">
